@@ -20,12 +20,12 @@ import Image from "next/image";
 export default function HomePage() {
   return (
     <div className="relative flex h-fit flex-col bg-background text-foreground">
-      <div className="mt-16"></div>
+      <div className="mt-16 min-h-screen"></div>
 
       <LandingHeader />
 
-      <Hero />
-
+      {/* <Hero /> */}
+{/* 
       <StatsSection />
 
       <BentoGridSection />
@@ -297,7 +297,7 @@ export default function HomePage() {
 
       <EmailFormSection />
 
-      <SectionDivider />
+      <SectionDivider /> */}
 
       <Footer />
     </div>

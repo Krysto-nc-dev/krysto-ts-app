@@ -1,7 +1,7 @@
 {
-  "name": "nowts",
+  "name": "krup",
   "version": "0.1.0",
-  "nowts-version": "1.0.0",
+  "krup-version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",

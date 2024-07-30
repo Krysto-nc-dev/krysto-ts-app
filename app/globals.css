@@ -1,7 +1,7 @@
+@charset "UTF-8";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -30,7 +30,6 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
   }
-
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
@@ -58,8 +57,6 @@
     --chart-5: 340 75% 55%;
   }
 }
-
-
 @layer base {
   * {
     @apply border-border;
@@ -68,13 +65,11 @@
     @apply bg-background text-foreground;
   }
 }
-
 @layer utilities {
   .text-gradient {
     @apply text-transparent bg-clip-text;
   }
 }
-
 .citation {
   position: relative;
   display: inline-block;
@@ -107,7 +102,7 @@
 
 .citation strong {
   font-weight: 700;
-  background: hsl(var(--primary) / 0.5);
+  background: hsl(var(--primary)/0.5);
   display: inline;
   padding: 2px;
   margin: -2px;
@@ -116,48 +111,34 @@
 .dot-pattern {
   background-color: var(--dot-background);
   opacity: 0.8;
-  background-image: radial-gradient(
-    var(--dot-color) 0.5px,
-    var(--dot-background) 0.5px
-  );
+  background-image: radial-gradient(var(--dot-color) 0.5px, var(--dot-background) 0.5px);
   background-size: var(--size, 10px) var(--size, 10px);
 }
 
 .prose {
   scroll-margin-top: 40px;
-
-  & h1,
-  & h2,
-  & h3,
-  & h4,
-  & h5,
-  & h6 {
-    position: relative;
-    scroll-margin-top: 70px;
-
-    &:hover {
-      & .icon-link {
-        opacity: 1;
-      }
-    }
-  }
-
-  & .icon.icon-link {
-    width: 20px;
-    height: 100%;
-    display: block;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: -24px;
-
-    opacity: 0;
-    transition: opacity 0.2s ease;
-    &::before {
-      content: "#";
-      font-size: 1.5rem;
-      color: hsl(var(--primary));
-    }
-  }
 }
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  position: relative;
+  scroll-margin-top: 70px;
+}
+.prose h1:hover .icon-link, .prose h2:hover .icon-link, .prose h3:hover .icon-link, .prose h4:hover .icon-link, .prose h5:hover .icon-link, .prose h6:hover .icon-link {
+  opacity: 1;
+}
+.prose .icon.icon-link {
+  width: 20px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -24px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.prose .icon.icon-link::before {
+  content: "#";
+  font-size: 1.5rem;
+  color: hsl(var(--primary));
+}/*# sourceMappingURL=globals.css.map */

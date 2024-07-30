@@ -1,25 +1,25 @@
 export const SiteConfig = {
-  title: "Now.ts",
-  description: "A template description for Now.ts",
-  prodUrl: "https://demo.nowts.app",
+  title: "Krup",
+  description: "Krup",
+  prodUrl: "https://krup.nc",
   domain: "demo.nowts.app",
   appIcon: "/images/icon.png",
   company: {
-    name: "NowTS Inc.",
-    address: "1234 Main St, New York, NY 10001",
+    name: "Krysto.",
+    address: "8 rue Higginson, Nouméa, Nouvelle-Calédonie",
   },
   brand: {
-    primary: "#007291",
+    primary: "#9196CA",
   },
   email: {
-    from: "NowTS <nowts@resend.dev>", // Replace this with your domaine email
-    contact: "contact@nowts.app",
+    from: "Kryto <krysto@resend.dev>", // Replace this with your domaine email
+    contact: "contact@krysto.nc",
   },
   maker: {
-    image: "https://melvynx.com/images/me/twitter-en.jpg",
-    website: "https://melvynx.com",
-    twitter: "https://twitter.com/melvyn_me",
-    name: "Melvynx",
+    image: "https://avatars.githubusercontent.com/u/73643319?v=4?s=400",
+    website: "https://krysto.nc",
+    twitter: "https://twitter.com",
+    name: "Stoyann",
   },
   auth: {
     password: false as boolean,
